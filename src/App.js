@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./sass/main.css";
+import "./sass/main.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Routering from "./Routering";
+import { createContext, useState } from "react";
+export const shoppingCart = createContext();
 function App() {
+  const [cart, setcart] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <shoppingCart.Provider value={{ cart: cart, addcart: setcart }}>
+       <Routering/>
+      </shoppingCart.Provider>
     </div>
   );
 }
