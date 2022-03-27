@@ -68,12 +68,14 @@ function OrderingCart() {
   };
   return (
     <div className='h-full text-center'>
-      <div className='row justify-conent-center m-3 text-light text-center'>
+      <div className='row justify-conent-ariund m-0 m-md-3 text-light text-center'>
         {ShoppingCart.cart.length === 0 ? (
           <h2>Your order list is empty</h2>
         ) : (
           ShoppingCart.cart.map((e, index) => (
-            <div key={index} className='card col-5 col-md-3 col-lg-2 cart m-3'>
+            <div
+              key={index}
+              className='card col-5 my-3 col-md-3 col-lg-2 cart m-2 m-lg-3'>
               <div class='card-body'>
                 <div className='cart-img'>
                   <img className='img-fluid' src={e.image} alt='' />

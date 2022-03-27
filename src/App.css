@@ -283,11 +283,9 @@
   color: #8DC63F;
 }
 .icon-style span{
-  margin: 10px 2px;
-  padding: 8px;
-  border: 1px solid #8DC63F;
-  border-radius: 50px;
-  background-color: #8DC63F;
+  margin: 20px 3px;
+  padding: 5px;
+  
 }
 .footer{
   background-image: url('./img/footer_background.jpg');

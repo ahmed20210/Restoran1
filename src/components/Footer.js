@@ -1,11 +1,12 @@
 import React from "react";
 import {ImFacebook} from 'react-icons/im'
 import { BsTwitter } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTelegramPlane } from "react-icons/fa";
 import { AiFillLinkedin, AiFillPhone } from "react-icons/ai";
 import { IoLocationSharp  } from "react-icons/io5";
 import { IoIosArrowForward } from 'react-icons/io'
 import { HiMail } from "react-icons/hi";
+
 function Footer() {
   return (
     <>
@@ -91,14 +92,16 @@ function Footer() {
                 <button
                   type='button'
                   className='btn btn-success text-light py-1 position-absolute top-0 end-0 mt-2 me-2'>
-                  SignUp
+                  <FaTelegramPlane/>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h5 className="text-light text-center py-1 bg-success">Copyright © 2022 Restoran is powered by Sharabash</h5>
+      <h5 className='text-light text-center py-1 bg-success mb-0'>
+        Copyright © 2022 Restoran is powered by Sharabash
+      </h5>
     </>
   );
 }

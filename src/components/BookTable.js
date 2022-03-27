@@ -6,7 +6,7 @@ function BookTable() {
     <div
       id='book-table'
       className='row justify-content-center align-items-center book-table'>
-      <div className='row justify-content-center align-items-center bg-light p-3 col-10 col-md-7 col-lg-8 rounded-5'>
+      <div className='row justify-content-center align-items-center bg-light p-3 col-11 col-md-7 col-lg-8 rounded-5'>
         <div className='col-12 justify-content-center align-items-center row'>
           <div className='row w-100 text-center'>
             <span className='font-pacifico'>Reservation</span>
@@ -35,7 +35,7 @@ function BookTable() {
         <div className='col-12 justify-content-center align-items-center row'>
           <div className='col-10 col-lg-6 my-2'>
             <DateTimePicker
-              className=' form-control '
+              className=' form-control white-space p-1'
               onChange={onChange}
               value={value}
             />

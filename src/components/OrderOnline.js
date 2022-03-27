@@ -58,14 +58,15 @@ ShoppingCart.addcart([...ShoppingCart.cart, e]);
           </Nav.Link>
         </Nav.Item>
       </Nav>
-      <div className='row justify-conent-center m-3 text-light text-center'>
+      <div className='row justify-conent-center'>
+      <div className='row justify-conent-center m-0 m-md-3 text-light text-center'>
         {List.map((e, index) => (
-          <div key={index} className='card col-5 col-md-3 col-lg-2 cart m-3'>
+          <div key={index} className='card col-5 my-3 col-md-3 col-lg-2 cart m-2 m-lg-3'>
             <div class='card-body'>
               <div className='cart-img'>
                 <img className='img-fluid' src={e.image} alt='' />
               </div>
-              <h5 className='card-title'>{e.name}</h5>
+              <h5 className='card-title white-space fs-6'>{e.name}</h5>
               <p className='card-text'>{e.description}</p>
               <span>{`${e.price} $`}</span>
               <span className='ms-5'>
@@ -78,6 +79,7 @@ ShoppingCart.addcart([...ShoppingCart.cart, e]);
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

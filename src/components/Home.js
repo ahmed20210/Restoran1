@@ -17,10 +17,10 @@ const Home = () => {
               quos optio, laborum voluptas aspernatur voluptate fugiat totam in
               a iusto accusantium!
             </p>
-           <Link className='btn-success btn text-white mx-1 ' to='/book-table'>
+           <Link className='btn-success btn text-white mx-2 ' to='/book-table'>
               BOOK A TABLE
             </Link>
-            <Link className='btn-success btn text-white mx-1' to='/OrderOnline'>
+            <Link className='btn-success btn text-white mx-2' to='/OrderOnline'>
               ORDER ONLINE
             </Link>
           </div>

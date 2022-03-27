@@ -15,7 +15,7 @@ function Menu() {
       setList(data)
     }
   return (
-    <div className='text-light text-center m-5'>
+    <div className='text-light text-center my-5'>
       <div>
         <span className='before-effect after-effect font-pacifico'>
           FOOD MENU
@@ -81,16 +81,16 @@ function Menu() {
           </div>
           <div className='carousel-inner'>
             <div className='carousel-item active '>
-              <div className='row justify-conent-center m-3'>
+              <div className='row justify-conent-ariund m-0 m-md-3 text-light text-center'>
                 {List.map((e, index) => (
                   <div
                     key={index}
-                    className='card col-5 col-md-3 col-lg-2 cart m-3'>
+                    className='card col-5 col-md-3 col-lg-2 cart m-2 m-lg-3'>
                     <div className='card-body'>
                       <div className='cart-img'>
                         <img className='img-fluid' src={e.image} alt='' />
                       </div>
-                      <h5 className='card-title'>{e.name}</h5>
+                      <h5 className='white-space fs-6 card-title'>{e.name}</h5>
                       <p className='card-text'>{e.description}</p>
                       <span>{`${e.price} $`}</span>
                     </div>
@@ -99,16 +99,16 @@ function Menu() {
               </div>
             </div>
             <div className='carousel-item'>
-              <div className='row justify-conent-center m-3'>
+              <div className='row justify-conent-ariund m-0 m-md-3 text-light text-center'>
                 {List.map((e, index) => (
                   <div
                     key={index}
-                    className='card col-5 col-md-3 col-lg-2 cart m-3'>
+                    className='card col-5 col-md-3 col-lg-2 cart m-2 m-lg-3'>
                     <div className='card-body'>
                       <div className='cart-img'>
                         <img className='img-fluid' src={e.image} alt='' />
                       </div>
-                      <h5 className='card-title'>{e.name}</h5>
+                      <h5 className='white-space fs-6 card-title'>{e.name}</h5>
                       <p className='card-text'>{e.description}</p>
                       <span>{`${e.price} $`}</span>
                     </div>
@@ -117,16 +117,16 @@ function Menu() {
               </div>
             </div>
             <div className='carousel-item'>
-              <div className='row justify-conent-center m-3'>
+              <div className='row justify-conent-ariund m-0 m-md-3 text-light text-center'>
                 {List.map((e, index) => (
                   <div
                     key={index}
-                    className='card col-5 col-md-3 col-lg-2 cart m-3'>
+                    className='card col-5 col-md-3 col-lg-2 cart m-2 m-lg-3'>
                     <div className='card-body'>
                       <div className='cart-img'>
                         <img className='img-fluid' src={e.image} alt='' />
                       </div>
-                      <h5 className='card-title'>{e.name}</h5>
+                      <h5 className='white-space fs-6 card-title'>{e.name}</h5>
                       <p className='card-text'>{e.description}</p>
                       <span>{`${e.price} $`}</span>
                     </div>
