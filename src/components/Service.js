@@ -1,20 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {FaCartPlus} from 'react-icons/fa'
 import { IoRestaurantSharp } from "react-icons/io5";
 import { SiCodechef } from "react-icons/si";
 import { RiCustomerServiceFill } from "react-icons/ri";
+import WOW from "wowjs";
+import "animate.css";
 export default function Service() {
+ useEffect(() => {
+  new WOW.WOW({
+    live: false,
+  }).init();
+ }, []);
+
   return (
     <div
       id='service'
       className='p-5 bg-dark row justify-content-center service my-5'>
-      <div className='text-white text-center my-3'>
+      <div className='text-white text-center my-3 wow slide-in-top '>
         <span className='before-effect after-effect font-pacifico'>
           Our Services
         </span>
         <h2 className='font-nunito'>Explore Our Services</h2>
       </div>
-      <div className='card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg .card-hover'>
+      <div className='wow slide-in-left card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg .card-hover'>
         <div className='card-body'>
           <SiCodechef
             className='text-success my-3 '
@@ -27,7 +35,7 @@ export default function Service() {
           </p>
         </div>
       </div>
-      <div className='card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '>
+      <div className='wow slide-in-bottom card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '>
         <div className='card-body'>
           <IoRestaurantSharp
             className='text-success my-3'
@@ -40,7 +48,7 @@ export default function Service() {
           </p>
         </div>
       </div>
-      <div className='card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '>
+      <div className='wow slide-in-bottom card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '>
         <div className='card-body'>
           <FaCartPlus
             className='text-success my-3'
@@ -53,7 +61,9 @@ export default function Service() {
           </p>
         </div>
       </div>
-      <div className='card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '>
+      <div
+        className=' wow slide-in-right card card-bg text-white m-2 col-11 col-sm-5 col-md-5 col-lg '
+        data-wow-delay='0.5s'>
         <div className='card-body'>
           <RiCustomerServiceFill
             className='text-success my-3'

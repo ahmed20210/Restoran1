@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row} from 'react-bootstrap'
 import image from '../img/hero.png'
 import { Link } from 'react-router-dom'
+import WOW from 'wowjs';
 const Home = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  });
+
     return (
       <div id='home' className='container text-light pb-5 '>
         <Row className='justify-content-center align-items-center'>
-          <div className='col-11 col-lg-6 text-centers'>
+          <div className='col-11 col-lg-6 text-centers wow slide-in-left'>
             <h1 className='display-3 font-nunito'>
               Enjoy Our <br />
               Delicious Meal
@@ -20,7 +27,7 @@ const Home = () => {
            <Link className='btn-success btn text-white mx-2 ' to='/book-table'>
               BOOK A TABLE
             </Link>
-            <Link className='btn-success btn text-white mx-2' to='/OrderOnline'>
+            <Link className='btn-success btn text-white mx-2 ' to='/OrderOnline'>
               ORDER ONLINE
             </Link>
           </div>

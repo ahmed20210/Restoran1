@@ -39,12 +39,12 @@ function Menu() {
               aria-label='Slide 1'
               value={1}>
               <FaCoffee
-                className='col-6 text-success'
-                style={{ width: "60px", height: "40px" }}
+                className='col-6 mx-1 text-success'
+                style={{ width: "50px", height: "50px" }}
               />
               <div className='col-6'>
                 Popular
-                <br /> <span className='fw-bold fs-6'>Breakfast</span>
+                <br /> <span className='fw-bold h-6'>Breakfast</span>
               </div>
             </button>
             <button
@@ -55,7 +55,7 @@ function Menu() {
               aria-label='Slide 2'>
               <FaHamburger
                 className='col-6 text-success'
-                style={{ width: "60px", height: "40px" }}
+                style={{ width: "50px", height: "40px" }}
               />
               <div className='col-6'>
                 Special
@@ -69,8 +69,8 @@ function Menu() {
               data-bs-slide-to='2'
               aria-label='Slide 3'>
               <MdDinnerDining
-                className=' col-6 text-success'
-                style={{ width: "60px", height: "40px" }}
+                className=' col-6 mx-1 text-success'
+                style={{ width: "50px", height: "40px" }}
               />
               <div className='col-6'>
                 Lovely

@@ -1,6 +1,7 @@
 import "./App.css";
 import "./sass/main.css";
 import "./sass/main.css";
+import './animation.css'
 import "bootstrap/dist/js/bootstrap.bundle";
 import Routering from "./Routering";
 import { createContext, useState } from "react";

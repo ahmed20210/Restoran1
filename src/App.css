@@ -119,7 +119,7 @@
 }
 
 .carousel .carousel-style [data-bs-target] {
-  width: 140px;
+  width: 110px;
   height: 50px;
   text-indent: initial;
   color: #FFFfff;
@@ -137,7 +137,7 @@
   background-color: #8DC63F;
   bottom: -8px;
   right: -10px;
-  width: 100%;
+  width: 105%;
   height: 3px;
   position: absolute;
 
@@ -282,14 +282,18 @@
   font-family: 'Pacifico', cursive;
   color: #8DC63F;
 }
-.icon-style span{
+
+.icon-style span {
   margin: 20px 3px;
   padding: 5px;
-  
+
 }
-.footer{
+
+.footer {
   background-image: url('./img/footer_background.jpg');
 }
-.footer>div{
+
+.footer>div {
   background-color: rgba(15, 23, 43, .9);
 }
+

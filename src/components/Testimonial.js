@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   
   Pagination,
@@ -21,7 +21,13 @@ import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import WOW from "wowjs";
 function Testimonial() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  });
   const clients = [
     {
       img: image0,
@@ -67,15 +73,15 @@ function Testimonial() {
     },
   ];
   return (
-    <div id='testimonials'>
-      <div className='text-white text-center my-3'>
+    <div id='testimonials '>
+      <div className='text-white text-center my-3 wow slide-in-top'>
         <span className='before-effect after-effect font-pacifico'>
           Testimonial
         </span>
         <h2 className='font-nunito'>Our Clients Say!!!</h2>
       </div>
       <Swiper
-        className='text-light m-5 pb-5'
+        className='text-light m-5 pb-5 wow slide-in-bottom'
         spaceBetween={30}
         controller={false}
         loop
@@ -111,9 +117,9 @@ function Testimonial() {
                       <div class='card-img col-6'>
                         <img className=' img-fluid' src={e.img} alt='' />
                       </div>
-                      <div className='col-6'>
+                      <div className='col-8'>
                         <h5 class='card-title white-space'>{e.name}</h5>
-                        <span className='white-space'>{e.profession}</span>
+                        <span className='white-space '>{e.profession}</span>
                       </div>
                     </div>
                   </div>

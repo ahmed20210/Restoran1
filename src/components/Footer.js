@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       <div className='footer'>
-        <div className='px-5 py-3'>
+        <div className='px-2 px-lg-5 py-3'>
           <div className='text-light row justify-content-evenly'>
             <div className='col-5 col-lg-2'>
               <h3 className='font-pacifico'>Company</h3>
@@ -38,20 +38,20 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className='col-5 col-lg-2'>
+            <div className='col-7 col-sm-5 col-lg-2'>
               <div>
                 <h3 className='font-pacifico'>Contact</h3>
                 <p className='white-space'>
-                  <IoLocationSharp className='me-2 text-success' />
+                  <IoLocationSharp className='me-1 text-success' />
                   11 Street, Tanta, Egypt
                 </p>
                 <p className='white-space'>
-                  <AiFillPhone className='me-2 text-success' />
+                  <AiFillPhone className='me-1 text-success' />
                   +2011 4478 1238
                 </p>
-                <p className='white-space'>
-                  <HiMail className='me-2 text-success' />
-                  Ahmdmsty345@gmail.com
+                <p className='white-space fs-6'>
+                  <HiMail className='me-1 text-success' />
+                  ahmdmsty345@gmail.com
                 </p>
                 <p className='icon-style'>
                   <span>
@@ -80,7 +80,7 @@ function Footer() {
                 <p>Sunday</p>
               </div>
             </div>
-            <div className='col-5 col-lg-2'>
+            <div className='col-7 col-sm-5 col-lg-2'>
               <h3 className='font-pacifico'>Newsletter</h3>
               <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
               <div className='position-relative mx-auto '>
